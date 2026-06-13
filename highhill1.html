@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>High Hill Plywood | Premium Plywood & Interior Solutions</title>
+
+<meta name="description" content="High Hill Plywood offers premium quality plywood, laminates, veneers, flush doors and interior solutions for residential and commercial projects.">
+
+<meta name="keywords" content="Plywood, Waterproof Plywood, Commercial Plywood, Laminates, Veneers, Flush Doors, Interior Solutions, High Hill Plywood">
+
+<meta name="author" content="High Hill Plywood">
+
+<meta name="robots" content="index,follow">
+
+<meta property="og:title" content="High Hill Plywood">
+<meta property="og:description" content="Premium Wood Solutions for Homes and Commercial Projects">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+line-height:1.6;
+color:#333;
+background:#fff;
+}
+
+header{
+position:sticky;
+top:0;
+background: #aa8460;
+z-index:1000;
+}
+
+.nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    font-size:1.6rem;
+    font-weight:bold;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+    object-fit:contain;
+    border-radius:50%;
+}
+
+.menu{
+display:flex;
+gap:20px;
+}
+
+.menu a{
+color: white;
+text-decoration:none;
+font-weight:500;
+}
+
+.menu a:hover{
+color:#d8b07a;
+}
+
+.hamburger{
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('/COVER.png');
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.hero h1{
+font-size:3.5rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:#8b5a2b;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.btn:hover{
+background:#6d431e;
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+color:#5b3a1a;
+font-size:2.2rem;
+}
+
+#about p{
+margin-bottom:15px;
+text-align:justify;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.12);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 24px rgba(0,0,0,0.18);
+}
+
+.card img{
+width:100%;
+height:600px;
+object-fit:cover;
+}
+
+.card div{
+padding:20px;
+}
+
+.card h3{
+color:#5b3a1a;
+margin-bottom:10px;
+}
+
+.social-icons{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+
+.social-icons a{
+width:45px;
+height:45px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#5b3a1a;
+color:white;
+border-radius:50%;
+text-decoration:none;
+}
+
+.social-icons a:hover{
+background:#8b5a2b;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:28px;
+text-decoration:none;
+z-index:999;
+}
+
+@media(max-width:768px){
+
+.menu{
+display:none;
+flex-direction:column;
+position:absolute;
+top:60px;
+left:0;
+right:0;
+background:#3f2a14;
+padding:20px;
+}
+
+.menu.show{
+display:flex;
+}
+
+.hamburger{
+display:block;
+}
+
+.hero h1{
+font-size:2.2rem;
+}
+}
+
+.contact{
+padding:100px 8%;
+background:white;
+}
+
+.contact h2{
+text-align:center;
+font-size:50px;
+margin-bottom:50px;
+}
+.contact-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:60px;
+}
+
+.contact-info{
+    width:40%;
+}
+
+.contact-form{
+    width:60%;
+    background:#f9f9f9;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.social-icons{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+}
+
+@media(max-width:768px){
+
+    .contact-container{
+        flex-direction:column;
+    }
+
+    .contact-info,
+    .contact-form{
+        width:100%;
+    }
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .contact-form{
+        padding:20px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea{
+        font-size:15px;
+    }
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.brands{
+    text-align:center;
+    padding:80px 20px;
+    background:#f5f5f5;
+}
+
+.brands h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.brands p{
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:50px;
+}
+
+.slider{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.slide-track{
+    display:flex;
+    width:calc(250px * 12);
+    animation:scroll 25s linear infinite;
+}
+
+.slide-track img{
+    width:220px;
+    height:120px;
+    object-fit:contain;
+    margin:0 30px;
+    transition:0.3s;
+}
+
+.slide-track img:hover{
+    filter:grayscale(0%);
+    transform:scale(1.08);
+}
+
+@keyframes scroll{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(calc(-250px * 6));
+    }
+}
+
+/* Mobile */
+@media(max-width:768px){
+    .brands h2{
+        font-size:28px;
+    }
+
+    .brands p{
+        font-size:18px;
+    }
+
+    .slide-track img{
+        width:150px;
+        height:80px;
+    }
+}
+
+.faq-item{
+    border-bottom:1px solid #ddd;
+    padding:15px 0;
+}
+
+.faq-q{
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    color:#5b3a1a;
+}
+
+.faq-a{
+    display:none; /* Hidden by default */
+    margin-top:10px;
+    color:#555;
+    line-height:1.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav class="nav">
+
+<div class="logo">
+    <img src="/file_00000000ff0471fa902f46c08a8475f8.png" alt="High Hill Plywood Logo">
+    <span>High Hill </span>
+</div>
+
+<div class="hamburger"
+onclick="document.querySelector('.menu').classList.toggle('show')">
+☰
+</div>
+<img src="">
+
+<div class="menu">
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Premium Wood Solutions For Every Space</h1>
+
+<p>
+Quality plywood, laminates, veneers and interior products
+crafted for homes, offices and commercial projects.
+</p>
+
+<a href="#contact" class="btn">
+Get Free Quote
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About High Hill</h2>
+
+<p>
+
+High Hill Plywood has been a trusted name in the plywood and interior solutions industry since 1972. We specialize in providing premium-quality plywood, laminates, veneers, flush doors, block boards, and allied wood products for residential, commercial, and industrial projects. Our commitment to quality, durability, and customer satisfaction has helped us build long-lasting relationships with clients across various sectors. Every product we offer is carefully selected and manufactured to meet the highest industry standards. We combine traditional craftsmanship with modern technology to deliver reliable and aesthetically appealing solutions.
+
+Over the years, we have earned a reputation for consistency, integrity, and excellence in every aspect of our business. Our products are designed to withstand the test of time while enhancing the beauty and functionality of interiors. We work closely with homeowners, architects, interior designers, builders, contractors, and dealers to understand their unique requirements and provide tailored solutions. Our extensive product portfolio offers a perfect balance of strength, performance, and elegant design.
+
+
+
+At High Hill Plywood, we believe that quality materials are the foundation of every successful project. This belief drives us to continuously improve our products and services while maintaining strict quality control standards. We are committed to sustainable practices and responsible sourcing to ensure a better future for generations to come. Our dedicated team strives to provide expert guidance, prompt service, and dependable support at every stage of a project.
+
+Whether you are designing a modern home, furnishing an office, or executing a large-scale commercial development, High Hill Plywood offers solutions you can trust. With more than five decades of experience, we continue to set benchmarks in quality, innovation, and customer satisfaction. Our vision is to remain a preferred choice for premium wood products by delivering excellence in every sheet, every finish, and every relationship we build. At High Hill Plywood, we are not just supplying products—we are helping create stronger, smarter, and more beautiful spaces for life.
+
+
+</p>
+
+</section>
+
+<section id="products">
+
+<h2>Our Products</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="idk2.jpeg">
+<div>
+<h3>Plywood</h3>
+<p>Strong and affordable plywood suitable for furniture and interiors. High strength and durability for long-lasting performance.
+Excellent load-bearing capacity and structural stability.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="idk.jpeg">
+<div>
+<h3>Flush Door</h3>
+<p>Manufactured using high-quality plywood and seasoned timber core.
+Strong, durable, and dimensionally stable construction.
+Smooth and uniform surface for painting, polishing, laminating, or veneering.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="block.jpeg">
+<div>
+<h3>Block Board</h3>
+<p>Manufactured with a solid timber strip core for superior strength.
+Lightweight yet highly durable construction.
+Excellent screw-holding and nail-holding capacity.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="vin.jpg">
+<div>
+<h3>Veneers</h3>
+<p>Premium plywood finished with a natural wood veneer surface.
+Offers the authentic look and feel of real wood.
+Enhances interiors with rich textures and elegant grain patterns.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="lem.png">
+<div>
+<h3>Laminates</h3>
+<p>Premium-quality decorative plywood panel for modern interiors.
+Manufactured using high-grade plywood and durable laminate surfaces.
+Provides excellent strength and load-bearing capacity.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="densi.jpeg">
+<div>
+<h3>Dencified Ply</h3>
+<p>Manufactured under high pressure for increased density and strength.
+Extremely durable and suitable for heavy-duty applications.
+High load-bearing capacity and excellent structural stability.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="checke.jpeg">
+<div>
+<h3>Checkered</h3>
+<p>Premium plywood featuring a decorative checkered surface pattern.
+Combines durability with an attractive and modern appearance.
+High strength and excellent dimensional stability.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="flexy.jpg">
+<div>
+<h3>Flexy</h3>
+<p>Specially engineered plywood designed for curved and flexible applications.
+Easily bends into circular, curved, and custom shapes without cracking.
+Lightweight yet strong construction.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="hdhmr.jpeg">
+<div>
+<h3>HDHMR</h3>
+<p>Excellent moisture resistance, suitable for humid environments. Enhanced dimensional stability for long-lasting performance.
+Termite and borer resistant when properly treated.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<div>
+<h3>Bulk Supply</h3>
+<p>
+Reliable bulk supply solutions for builders, contractors and
+large commercial projects.
+</p>
+</div>
+</div>
+
+<div class="card">
+<div>
+<h3>Custom Orders</h3>
+<p>
+Customized plywood and interior material solutions according
+to project requirements.
+</p>
+</div>
+</div>
+
+<div class="card">
+<div>
+<h3>Project Consultation</h3>
+<p>
+Professional guidance to help you select the right products
+for every application.
+</p>
+</div>
+</div>
+
+<div class="card">
+<div>
+<h3>Interior Solutions</h3>
+<p>
+Complete wood and interior material solutions for homes,
+offices and commercial spaces.
+</p>
+</div>
+</div>
+
+<div class="card">
+<div>
+<h3>Fast Delivery</h3>
+<p>
+Efficient logistics network ensuring timely deliveries
+across project locations.
+</p>
+</div>
+</div>
+
+<div class="card">
+<div>
+<h3>Dealer Support</h3>
+<p>
+Dedicated assistance and competitive pricing for dealers,
+distributors and retailers.
+</p>
+</div>
+</div>
+
+</div>
+
+<section id="testimonials">
+
+<h2>What Our Customers Say</h2>
+
+<div class="cards">
+
+<div class="card">
+<div>
+<h3>★★★★★</h3>
+<p>
+"Excellent plywood quality and professional service.
+Highly recommended for all interior projects."
+</p>
+<br>
+<strong>- Happy Customer</strong>
+</div>
+</div>
+
+<div class="card">
+<div>
+<h3>★★★★★</h3>
+<p>
+"Reliable supplier with timely delivery and premium
+products. Great experience working with them."
+</p>
+<br>
+<strong>- Building Contractor</strong>
+</div>
+</div>
+
+<div class="card">
+<div>
+<h3>★★★★★</h3>
+<p>
+"Outstanding product range and quality finishes.
+Perfect for modern interior designs."
+</p>
+<br>
+<strong>- Interior Designer</strong>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<div class="faq-q">What types of plywood do you offer?</div>
+<div class="faq-a">
+We offer commercial plywood, waterproof plywood,
+block boards, laminates, veneers and flush doors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">Do you supply materials in bulk?</div>
+<div class="faq-a">
+Yes, we handle both retail and bulk orders for
+residential and commercial projects.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">Do you provide delivery services?</div>
+<div class="faq-a">
+Yes, we provide timely delivery services depending
+on location and order size.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">Can I get custom requirements fulfilled?</div>
+<div class="faq-a">
+Absolutely. We provide customized solutions based on
+your project requirements.
+</div>
+</div>
+
+</section>
+
+
+<section class="brands">
+    <h2>Trusted by India's Leading Brands</h2>
+
+    <div class="slider">
+        <div class="slide-track">
+
+            <!-- Logos -->
+            <img src="SSS.webp" alt="Adidas">
+            <img src="AAA.webp" alt="Shoppers Stop">
+            <img src="CCC.webp" alt="Puma">
+            <img src="DDD.webp" alt="HDFC">
+            <img src="GGG.webp" alt="ICICI">
+
+            <!-- Duplicate logos for smooth infinite loop -->
+            <img src="HHH.webp" alt="Adidas">
+            <img src="III.webp" alt="Shoppers Stop">
+            <img src="LLL.webp" alt="Nike">
+            <img src="MMM.webp" alt="Puma">
+            <img src="NNN.webp" alt="HDFC">
+            <img src="QQQ.webp" alt="ICICI">
+            <img src="SSS.webp" alt="Nike">
+            <img src="TTT.webp" alt="Puma">
+            <img src="/1000099358.webp" alt="HDFC">
+            <img src="/1000099359.webp" alt="ICICI">
+            <img src="ipca.webp" alt="HDFC">
+            <img src="OIP.webp" alt="ICICI">
+        </div>
+    </div>
+
+</section>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-container">
+
+    <!-- Left Side -->
+    <div class="contact-info">
+
+        <h1>High Hill</h1>
+
+        <p>📞 +91 98270 10071</p>
+        <p>✉️ highhillply@gmail.com</p>
+        <p>📍 Madhya Pradesh, India</p>
+        <p>🕒 Mon - Sat : 10:00 AM - 8:00 PM</p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/18WboUcccn/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/high_hills.in" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.instagram.com/high_hills.in" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Right Side Form -->
+    <form action="https://formsubmit.co/highhillply@gmail.com"
+          method="POST"
+          class="contact-form">
+
+        <input type="hidden" name="_subject"
+               value="New Customer Query - High Hill Plywood">
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="text"
+               name="Name"
+               placeholder="Your Name"
+               required>
+
+        <input type="tel"
+               name="Phone"
+               placeholder="Mobile Number"
+               required>
+
+        <textarea name="Requirement"
+                  rows="5"
+                  placeholder="Send Message"
+                  required></textarea>
+
+        <button type="submit" class="btn">
+            Send Query
+        </button>
+
+    </form>
+
+</div>
+
+</section>
+
+
+
+<footer style="background:#222;color:white;text-align:center;padding:30px;">
+
+<h3>High Hill Plywood</h3>
+
+<p>
+Premium Plywood • Laminates • Veneers • Flush Doors • Interior Solutions
+</p>
+
+<br>
+
+<p>
+📞 +91 9827010071 |
+📧 highhillply@gmail.com
+</p>
+
+<br>
+
+<p>
+© 1972 High Hill Plywood. All Rights Reserved.
+</p>
+
+</footer>
+
+<a
+href="https://wa.me/919876543210?text=Hello%20High%20Hill%20Plywood,%20I%20would%20like%20to%20know%20more%20about%20your%20products."
+class="whatsapp"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<script>
+
+document.querySelectorAll('.faq-q').forEach(question => {
+
+question.addEventListener('click', () => {
+
+const answer = question.nextElementSibling;
+
+if(answer.style.display === 'block'){
+answer.style.display = 'none';
+}
+else{
+answer.style.display = 'block';
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
