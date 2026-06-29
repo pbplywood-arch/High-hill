@@ -227,6 +227,124 @@ text-decoration:none;
 z-index:999;
 }
 
+/* Vision Section */
+
+.vision-section{
+    padding:80px 8%;
+    background:#f8f8f8;
+}
+
+.vision-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.vision-image{
+    flex:1;
+    min-width:320px;
+}
+
+.vision-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.vision-content{
+    flex:1;
+    min-width:320px;
+}
+
+.section-tag{
+    display:inline-block;
+    background:#c49b3d;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.vision-content h2{
+    font-size:42px;
+    color:#222;
+    margin:20px 0;
+    line-height:1.2;
+}
+
+.vision-content p{
+    color:#666;
+    font-size:17px;
+    line-height:1.8;
+}
+
+.vision-points{
+    margin:30px 0;
+}
+
+.point{
+    display:flex;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.point span{
+    width:35px;
+    height:35px;
+    background:#c49b3d;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+    margin-right:15px;
+}
+
+.point p{
+    margin:0;
+    font-weight:600;
+    color:#333;
+}
+
+.vision-btn{
+    display:inline-block;
+    background:#c49b3d;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 35px;
+    border-radius:6px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.vision-btn:hover{
+    background:#222;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .vision-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .point{
+        justify-content:center;
+        text-align:left;
+    }
+
+    .vision-content h2{
+        font-size:32px;
+    }
+}    
+    
 @media(max-width:768px){
 
 .menu{
@@ -692,6 +810,53 @@ Perfect for modern interior designs."
 
 </section>
 
+<!-- Vision Section -->
+<section class="vision-section">
+    <div class="vision-container">
+        <div class="vision-image">
+            <img src="images/vision.jpg" alt="High Hill Plywood Vision">
+        </div>
+
+        <div class="vision-content">
+            <span class="section-tag">OUR VISION</span>
+
+            <h2>Building Strength, Creating Trust</h2>
+
+            <p>
+                At <strong>High Hill Plywood</strong>, our vision is to become a trusted
+                leader in the plywood industry by delivering premium-quality wood
+                products that combine durability, innovation, and sustainability.
+                We strive to create solutions that inspire architects, builders,
+                and homeowners while ensuring long-lasting performance.
+            </p>
+
+            <div class="vision-points">
+                <div class="point">
+                    <span>✔</span>
+                    <p>Deliver Premium Quality Plywood Products</p>
+                </div>
+
+                <div class="point">
+                    <span>✔</span>
+                    <p>Focus on Innovation & Modern Manufacturing</p>
+                </div>
+
+                <div class="point">
+                    <span>✔</span>
+                    <p>Promote Sustainable & Eco-Friendly Practices</p>
+                </div>
+
+                <div class="point">
+                    <span>✔</span>
+                    <p>Build Long-Term Customer Relationships</p>
+                </div>
+            </div>
+
+            <a href="contact.html" class="vision-btn">Contact Us</a>
+        </div>
+    </div>
+</section>
+    
 <section id="faq">
 
 <h2>Frequently Asked Questions</h2>
